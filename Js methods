@@ -1,0 +1,32 @@
+array-join:-
+
+const elements = ['🥝', '🍓', '🍋']
+console.log(elements.join())
+// expected output: "🥝,🍓,🍋"
+console.log(elements.join('-'))
+// expected output: "🥝-🍓-🍋"
+
+02_array-includes
+const elements = ['🥝', '🍓', '🍋']
+console.log(elements.includes('🍓'))
+// Does the array include the 🍓?
+// expected output: true
+
+03_array-merge_destructuring
+const array1 = ['a', 'b', 'c']
+const array2 = ['d', 'e', 'f']
+console.dir([...array1, ...array2])
+// [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+const array3 = ['g', 'h']
+console.dir([...array1, ...array2, ...array3])
+console.dir([...array3, ...array2, ...array1])
+
+04_array-concat:-
+const array1 = ['a', 'b', 'c']
+const array2 = ['d', 'e', 'f']
+console.dir(array1.concat(array2))
+const array3 = ['g', 'h']
+console.dir(array1.concat(array2, array3))
+//
+console.dir([].concat(array1, array2, array3))
+console.dir(array1 + array2 + array3)
